@@ -25,7 +25,7 @@
     }
     
     NSDictionary *photo = photos.firstObject;
-    result.imageURL = photo[@"reference"];
+    result.imageURL = photo[@"photo_reference"];
     
 
     return result;

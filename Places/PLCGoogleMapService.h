@@ -19,4 +19,15 @@ typedef void(^PLCFailureBlock)(NSError *);
                         failure:(PLCFailureBlock)failure;
 
 
+- (void)getImage:(NSString*)photoRef ;
+
+//Searching by Text methods
+- (void)getPlacesByText:(NSString*)text
+                success:(PLCSuccessBlock)successBlock
+                failure:(PLCFailureBlock)failure;
+
+- (void)getplacesImages:(NSString*)imageURL
+                success:(PLCSuccessBlock)successBlock
+                failure:(PLCFailureBlock)failure;
+
 @end
